@@ -7,6 +7,12 @@ import {
 } from 'react-native';
 
 export default class DetailsScreen extends Component {
+
+    static navigationOptions = ({ navigation }) => ({
+        title: navigation.state.params.title,
+        headerRight: <View/>,
+    })
+
     render() {
         return (
             <View style={styles.container}>

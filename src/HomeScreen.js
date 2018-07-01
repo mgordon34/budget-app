@@ -7,6 +7,12 @@ import {
 } from 'react-native';
 
 export default class HomeScreen extends Component {
+
+    // static navigationOptions = {
+    //     headerTitleStyle: { alignSelf: 'center', textAlign: 'center' },
+    //     title: "Amy's Budget",
+    // };
+
     render() {
         return (
             <View style={styles.container}>
@@ -18,7 +24,7 @@ export default class HomeScreen extends Component {
                 </Text>
                 <Button
                     title="Press Here"
-                    onPress={() => this.props.navigation.navigate('Details')}
+                    onPress={() => this.props.navigation.navigate('Details', {title: 'Details'})}
                 />
 
             </View>
