@@ -6,12 +6,15 @@ import {
     Button,
 } from 'react-native';
 
+import {HeaderBackButton} from 'react-navigation'
+
 export default class DetailsScreen extends Component {
 
     static navigationOptions = ({ navigation }) => ({
         title: navigation.state.params.title,
         headerRight: <View/>,
-    })
+        headerLeft: <HeaderBackButton onPress={() => navigation.goBack()}/>,
+    });
 
     render() {
         return (

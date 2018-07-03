@@ -8,10 +8,10 @@ import {
 
 export default class HomeScreen extends Component {
 
-    // static navigationOptions = {
+    // static navigationOptions = ({ navigation }) => ({
     //     headerTitleStyle: { alignSelf: 'center', textAlign: 'center' },
     //     title: "Amy's Budget",
-    // };
+    // });
 
     render() {
         return (
